@@ -16,11 +16,6 @@
       "price": 29.9
     },
     {
-      "id": "f2d1",
-      "name": "teste",
-      "price": "12"
-    },
-    {
       "id": "dd04",
       "name": "teste",
       "price": "12"
@@ -41,19 +36,9 @@
       "price": "40"
     },
     {
-      "id": "6d9b",
-      "name": "Mesa",
-      "price": "56"
-    },
-    {
       "id": "7c9b",
       "name": "Mesa",
       "price": "56"
-    },
-    {
-      "id": "e793",
-      "name": "Mouse",
-      "price": "45"
     },
     {
       "id": "86ef",
@@ -61,29 +46,14 @@
       "price": "45"
     },
     {
-      "id": "cade",
-      "name": "monitor",
-      "price": "150"
-    },
-    {
       "id": "70d9",
       "name": "monitor",
       "price": "150"
     },
     {
-      "id": "344d",
-      "name": "microfone",
-      "price": "80"
-    },
-    {
       "id": "d6cf",
       "name": "microfone",
       "price": "80"
-    },
-    {
-      "id": "b8b5",
-      "name": "Tela",
-      "price": "56"
     }
   ]
 }

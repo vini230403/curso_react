@@ -7,7 +7,7 @@ import { useFetch } from './hooks/useFetch'
 const url = "http://localhost:3000/products"
 
 function App() {
-  const[products, setProducts] = useState([])
+  const[product, setProduct] = useState([])
 
   // 4
   const {data: items, httpConfig, loading, error} = useFetch(url)
@@ -26,7 +26,7 @@ function App() {
 
       const data = await res.json()
 
-      setProducts(data)
+      setProduct(data)
 
       
     }
@@ -55,7 +55,7 @@ function App() {
     // 3 - Carregamento dinâmico
     const addedProduct = await res.json()
 
-    setProducts((prevProducts) => [...prevProducts, addedProduct])*/
+    setProduct((prevProduct) => [...prevProduct, addedProduct])*/
 
     // 5
     httpConfig(product, "POST")
@@ -64,6 +64,12 @@ function App() {
     setName("")
     setPrice("")  
 
+  }
+
+  // 8 
+
+  const handleRemove = (id) =>{
+    httpConfig(id, "DELETE'")
   }
  
   
@@ -75,9 +81,10 @@ function App() {
         {!error && <p>{error}</p>}
         {!loading && (
         <ul>
-          {items && items.map((products) => (
-            <li key={products.id}>
-              {products.name} - R$: {products.price}
+          {items && items.map((product) => (
+            <li key={product.id}>
+              {product.name} - R$: {product.price}
+              <button onClick={() => handleRemove(product.id)}>Excluir</button>
             </li>  
           ))}
         </ul>
