@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+        "id": "1",
+        "name": "Mouse",
+        "price": 49.9
+    },
+    {
+        "id": "2",
+        "name": "Teclado",
+        "price": 69.9
+    },
+    {
+        "id": "3",
+        "name": "Monitor",
+        "price": 109.9
+    },
+    {
+        "id": "4",
+        "name": "Web-cam",
+        "price": 89.9
+    },
+    {
+        "id": "5",
+        "name": "Cabo HDMI",
+        "price": 39.9 
+    }
+  ]
+}
